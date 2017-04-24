@@ -1,3 +1,16 @@
 <h1>
-  {{title}}
+    {{title}}
 </h1>
+<nav>
+    <ul>
+        <li>
+            <a href="" [routerLink]="['/dashboard']">DASHBOARD</a>
+
+        </li>
+        <li>
+            <a href="" [routerLink]="['/customer']">CUSTOMER</a>
+        </li>
+    </ul>
+</nav>
+
+<router-outlet></router-outlet>
