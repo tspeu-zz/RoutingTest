@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from "./app-routing.module";
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CustomerComponent } from './customer/customer.component';
+import { AdminComponent } from "app/admin/admin.component";
+import { AdminModule } from "app/admin/admin.module";
 
 
 
@@ -15,12 +17,14 @@ import { CustomerComponent } from './customer/customer.component';
   declarations: [
     AppComponent,
     DashboardComponent,
-    CustomerComponent
+    CustomerComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    AdminModule,
     AppRoutingModule
 
     
